@@ -16,6 +16,25 @@ env/
 venv/
 ENV/
 instance/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django specific
+*.log
+db.sqlite3
+media/
+staticfiles/
+
+# Flask and Python environment
+.env
+.venv/
+env/
+venv/
+ENV/
+instance/
 .webassets-cache
 
 # Jupyter Notebooks Checkpoints
@@ -49,9 +68,14 @@ dmypy.json
 # VS Code
 .vscode/
 
-# Modelos y datos
+# Modelos y datos pesados
 *.pkl
 *.csv
 
+# Archivos específicos mayores a 100MB
+diamantes_api/*.pkl
+notebooks/*.pkl
+
 # MacOS
 .DS_Store
+
